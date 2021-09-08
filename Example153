@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Example153 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] num = new int[100];
+		int i;
+		for (i = 0; i < num.length; i++) {
+			num[i] = sc.nextInt();
+			if (num[i] == -1)
+				break;
+		}
+		sc.close();
+
+		int j = 0;
+		if (i > 4)
+			j = i - 3;
+		for (; j <= i - 1; j++) {
+			System.out.print(num[j] + " ");
+		}
+
+	}
+}
